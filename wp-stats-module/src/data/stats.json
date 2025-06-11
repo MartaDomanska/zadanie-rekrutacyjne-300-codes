@@ -1,0 +1,18 @@
+[
+    {
+      "icon": "/assets/HeadCircuit.svg",
+      "value": 200,
+      "description": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "icon": "/assets/UsersThree.svg",
+      "value": 120,
+      "description": "Lorem ipsum dolor sit amet"
+    },
+    {
+      "icon": "/assets/Star.svg",
+      "value": 10,
+      "description": "Lorem ipsum dolor sit amet"
+    }
+  ]
+  

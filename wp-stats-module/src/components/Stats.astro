@@ -1,0 +1,18 @@
+---
+import stats from '../data/stats.json';
+import StatCard from './StatCard.astro';
+---
+
+<section class="stats">
+  <h2>Headline</h2>
+  <p>Lorem ipsum dolor sit amet</p>
+  <div class="grid">
+    {stats.map(stat => (
+      <StatCard
+        icon={stat.icon}
+        value={stat.value}
+        description={stat.description}
+      />
+    ))}
+  </div>
+</section>

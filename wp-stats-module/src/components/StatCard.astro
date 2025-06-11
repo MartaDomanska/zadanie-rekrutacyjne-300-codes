@@ -1,0 +1,9 @@
+---
+// Props: icon, value, description
+const { icon, value, description } = Astro.props;
+---
+<div class="card">
+  <div class="icon">{icon && <img src={icon} alt="" />}</div>
+  <div class="value">{value}</div>
+  <div class="description">{description}</div>
+</div>
