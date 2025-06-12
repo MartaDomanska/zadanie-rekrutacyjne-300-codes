@@ -1,9 +1,16 @@
 ---
-// Props: icon, value, description
-const { icon, value, description } = Astro.props;
+const { icon, value, description, variant = "small" } = Astro.props;
 ---
-<div class="card">
-  <div class="icon">{icon && <img src={icon} alt="" />}</div>
-  <div class="value">{value}</div>
-  <div class="description">{description}</div>
+
+<div class={`section-card ${variant}`}>
+  {variant === "large" && (
+    <figure class="card-image">
+      <img src="/assets/2-b.png" alt="image" />
+    </figure>
+  )}
+  <figure class="icon">{icon && <img src={icon} alt="icon" />}</figure>
+  <div>
+    <span class="value">{value}</span>
+    <p class="description">{description}</p>
+  </div>
 </div>

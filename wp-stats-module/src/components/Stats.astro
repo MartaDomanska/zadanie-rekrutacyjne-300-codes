@@ -1,18 +1,30 @@
 ---
 import stats from '../data/stats.json';
 import StatCard from './StatCard.astro';
+import '../styles/stats.css';
 ---
 
-<section class="stats">
-  <h2>Headline</h2>
+<section class="section-stats">
+  <h1>Headline</h1>
   <p>Lorem ipsum dolor sit amet</p>
-  <div class="grid">
-    {stats.map(stat => (
-      <StatCard
-        icon={stat.icon}
-        value={stat.value}
-        description={stat.description}
+  <div class="layout">
+    <div class="card-large">
+      <StatCard 
+        icon={stats[0].icon} 
+        value={stats[0].value} 
+        description={stats[0].description} 
+        variant="large"
       />
-    ))}
+    </div>
+    <div class="card-small-wrapper">
+      {stats.slice(1).map(s => (
+        <StatCard 
+          icon={s.icon} 
+          value={s.value} 
+          description={s.description} 
+          variant="small"
+        />
+      ))}
+    </div>
   </div>
 </section>
