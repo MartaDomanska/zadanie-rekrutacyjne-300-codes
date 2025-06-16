@@ -8,6 +8,12 @@ To repozytorium zawiera rozwiązanie zadania rekrutacyjnego. Celem było stworze
 - **JSON** – jako źródło danych z CMS (WordPress)
 - **PHP** – opcjonalny custom endpoint dla REST API WordPressa
 
+## 🚀 Podgląd projektu online
+
+Projekt został wdrożony na Vercel i jest dostępny pod linkiem:  
+👉 [live demo](https://zadanie-rekrutacyjne-300-codes-1zhj-9z4276j44.vercel.app/)
+
+
 ## 🚀 Uruchomienie projektu
 
 ```bash
@@ -22,4 +28,4 @@ npm run dev
 
 3. Otwórz w przeglądarce:
 
-Projekt będzie dostępny pod http://localhost:4321.
+Projekt będzie dostępny pod http://localhost:4321
